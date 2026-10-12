@@ -21,6 +21,8 @@ Dataset **CIFAR-10** (60.000 imágenes de 32x32 píxeles a color, 10 clases), ca
 
 El modelo alcanza un **accuracy de 80,66%** sobre las 10.000 imágenes de test de CIFAR-10 (10 clases; el azar daría 10%). Como el conjunto de test también se utilizó como validación durante el entrenamiento (para `EarlyStopping` y `ModelCheckpoint`), esta cifra puede ser levemente optimista; una evaluación más estricta separaría un conjunto de validación propio a partir de los datos de entrenamiento.
 
+El modelo entrenado se incluye en el repositorio (`mejor_modelo.keras`), guardado automáticamente en su mejor punto de validación gracias a `ModelCheckpoint`, por lo que puede probarse directamente con `probar_modelo.py` sin volver a entrenar.
+
 ## Herramientas
 
 Python · TensorFlow / Keras · NumPy · Matplotlib · Pillow
